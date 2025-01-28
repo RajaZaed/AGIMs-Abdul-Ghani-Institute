@@ -584,66 +584,9 @@ border-left: 8px solid #f9eaae;
 margin-top: 3vh;
 }
 
-/* offer */
-.offer {
-    height: 80vh;
-    display: flex;
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
-    justify-content: space-between;
-    gap: 2vh; /* Adds spacing between items */
-}
 
-.two-offer {
-    width: 60%;
-    height: 100%;
-}
 
-.two-offer img {
-    height: 100%;
-    width: 100%; /* Ensures the image scales responsively */
-    object-fit: cover; /* Keeps the image proportions intact */
-}
 
-.one-offer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    width: 40%; /* Adjusted to work better on smaller screens */
-    margin-top: 15vh;
-    text-align: center;
-    padding: 2vh; /* Adds padding for better spacing */
-}
-
-.one-offer a {
-    text-decoration: none;
-    color: #020266;
-    font-size: 1rem;
-    border: 1px solid #020266;
-    padding: 1vh 2vh;
-    background-color: #f1f1f1;
-    border-radius: 5px;
-    margin-bottom: 1vh;
-}
-
-.one-offer a:hover {
-    border: none;
-    transition: 0.3s;
-    background-color: transparent;
-}
-
-.one-offer h1 {
-    font-size: 2.5rem;
-    color: #020266;
-}
-
-.one-offer p {
-    text-align: start;
-    font-size: 1rem;
-    border-left: 8px solid #f9eaae;
-    margin-top: 3vh;
-    padding-left: 1vh; /* Adds padding for better readability */
-}
 
 /* Responsive Adjustments */
 @media screen and (max-width: 768px) {
@@ -681,6 +624,10 @@ margin-top: 3vh;
     .offer {
         gap: 1vh; /* Reduce spacing for very small screens */
     }
+    .offer img{
+        width: 100%;
+        object-fit: cover;
+    }
 
     .two-offer {
         height: 40vh; /* Adjust image height further */
@@ -697,5 +644,181 @@ margin-top: 3vh;
     .one-offer a {
         font-size: 0.8rem;
         padding: 0.8vh 1.2vh;
+    }
+}
+
+/* frame */
+.frame{
+    height: 150vh;
+    background-color: #f4ebc6;
+    
+}
+.inside{
+    margin: auto;
+    height: 95%;
+    width: 90%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.z{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:  20%;
+}
+
+.a{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 35%;
+    width: 100%;
+}
+.i{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 35%;
+    width: 100%;
+}
+
+.d{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f6ef;
+    color: #020266;
+}
+.d a{
+    color: #020266;
+    font-size: 1rem;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.i{
+    /* border: 1px solid #020266; */
+    /* border-top: 1px solid #e4e2d7; */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #e4e2d7;
+
+}
+ .know{
+    
+    border: 1px solid #fdfbf5;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+
+    padding: 4vh 4vh;
+    background-color: #fdfbf5;
+ }
+ .info{
+    border: 1px solid #fdfbf5;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+
+    padding: 4vh 4vh;
+    background-color: #fdfbf5;
+    line-height: px;
+ }
+ .know h2{
+    margin-left: 2vh;
+    color: #020266;
+    font-size: 1.9rem;
+ }
+ .know p{
+    margin-left: 0.5vh;
+ }
+ .info p{
+    margin-left: 0.5vh;
+ }
+ .info h2{
+    margin-left: 2vh;
+    color: #020266;
+    font-size: 1.9rem;
+ }
+ .a{
+    /* background-color: #f9f4d4; */
+    /* border-top: 1px solid #e4e2d7; */
+    ;
+    /* border-bottom: 1px solid #e4e2d7; */
+ }
+
+ .z{
+    color: #020266;
+ }
+
+ .d a:hover{
+    border: 1px solid #020266;
+    background-color: #020266;
+    transition: 0.5s;
+    padding: 2vh 74vh;
+    color: #f4ebc6;
+ }
+
+ .z{
+    border: 1px solid #fdfbf5;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+
+    padding: 4vh 4vh;
+    background-color: #fdfbf5;
+ }
+
+ /* Responsive Design */
+@media (max-width: 768px) {
+    .frame {
+        height: auto; /* Adjusts to content height for smaller screens */
+    }
+
+    .inside {
+        width: 95%;
+    }
+
+    .z, .a, .i {
+        flex-direction: column; /* Stacks elements vertically */
+        height: auto;
+    }
+
+    .d {
+        flex-direction: column;
+        padding: 2vh;
+        height: auto;
+    }
+
+    .d a {
+        font-size: 1.5rem;
+        padding: 1vh 3vh;
+    }
+
+    .know h2, .info h2 {
+        font-size: 1.5rem;
+    }
+
+    .know p, .info p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .know, .info {
+        padding: 2vh;
+    }
+
+    .know h2, .info h2 {
+        font-size: 1.2rem;
+    }
+
+    .know p, .info p {
+        font-size: 0.9rem;
+    }
+
+    .d a {
+        font-size: 1rem;
+        padding: 1vh 2vh;
     }
 }
