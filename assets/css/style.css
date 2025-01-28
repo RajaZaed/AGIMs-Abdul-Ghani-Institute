@@ -413,10 +413,289 @@ height: 40vh;
 /* pic */
 .pic{
     height: 140vh;
+    margin-top: 5vh;
 
 }
 .pic img{
 object-fit: cover;
 height: 100%;
 width: 100%;
+}
+.pic {
+    height: 100vh;
+    width: 100%;
+}
+
+.pic img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/* For larger screens */
+@media screen and (min-width: 768px) {
+    .pic {
+        height: 120vh;
+    }
+}
+
+/* For very small screens */
+@media screen and (max-width: 480px) {
+    .pic {
+        height: 80vh;
+        
+    }
+}
+
+/* coment{
+ */
+ .coment{
+    height: 25vh;
+    background-color: #f7f6ef;
+    text-align: justify;
+    border-left:18px solid #f9eaae ;
+ }
+  .coment h3{
+margin-top: 4vh;
+margin-left: 14vh;
+color: #020266;
+
+  }
+
+  .coment p{
+    padding-top: 5vh;
+padding-left: 5vh;
+font-size: 1.7rem;
+  }
+
+  /* coment */
+.coment {
+    height: 25vh;
+    background-color: #f7f6ef;
+    text-align: justify;
+    border-left: 18px solid #f9eaae;
+    padding: 2vh; /* Adds padding for better spacing */
+}
+
+.coment h3 {
+    margin-top: 4vh;
+    margin-left: 14vh;
+    color: #020266;
+    font-size: 1.5rem; /* Adjust font size for responsiveness */
+}
+
+.coment p {
+    padding-top: 3vh;
+    padding-left: 5vh;
+    font-size: 1.7rem;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .coment {
+        height: auto; /* Adjust height to fit content */
+        padding: 3vh; /* Adds more padding for smaller screens */
+        border-left: 12px solid #f9eaae; /* Scales down the border size */
+    }
+
+    .coment h3 {
+        margin-left: 5vh; /* Adjust margin for smaller screens */
+        font-size: 1.2rem; /* Smaller font size */
+    }
+
+    .coment p {
+        padding-left: 3vh;
+        font-size: 1.3rem; /* Smaller paragraph text */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .coment {
+        padding: 2vh; /* Reduce padding for very small screens */
+        border-left: 8px solid #f9eaae; /* Further reduce border size */
+    }
+
+    .coment h3 {
+        margin-left: 2vh;
+        margin-top: 2vh;
+        font-size: 1rem; /* Smaller heading size */
+    }
+
+    .coment p {
+        padding-left: 2vh;
+        padding-top: 2vh;
+        font-size: 1rem; /* Smaller text for mobile */
+    }
+}
+
+  /* offer */
+  .offer{
+    /* background-color: red; */
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+.two-offer img{
+    height: 100%;}
+
+    .two-offer{
+        width: 60%;
+        height: 100%;
+    }
+
+.one-offer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    margin-top: 15vh;
+    text-align: center;
+}
+
+.one-offer a{
+    text-decoration: none;
+    color: #020266;
+    font-size: 1rem;
+    border: 1px solid #020266;
+    padding: 1vh 2vh;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    margin-bottom: 1vh;
+}
+
+.one-offer a:hover{
+    border: none;
+    transition: 0.3s;
+    background-color: transparent;
+}
+
+.one-offer h1{
+    font-size: 2.5rem;
+    color: #020266;
+}
+
+.one-offer p{
+text-align: start;
+font-size: 1rem;
+border-left: 8px solid #f9eaae;
+margin-top: 3vh;
+}
+
+/* offer */
+.offer {
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    justify-content: space-between;
+    gap: 2vh; /* Adds spacing between items */
+}
+
+.two-offer {
+    width: 60%;
+    height: 100%;
+}
+
+.two-offer img {
+    height: 100%;
+    width: 100%; /* Ensures the image scales responsively */
+    object-fit: cover; /* Keeps the image proportions intact */
+}
+
+.one-offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 40%; /* Adjusted to work better on smaller screens */
+    margin-top: 15vh;
+    text-align: center;
+    padding: 2vh; /* Adds padding for better spacing */
+}
+
+.one-offer a {
+    text-decoration: none;
+    color: #020266;
+    font-size: 1rem;
+    border: 1px solid #020266;
+    padding: 1vh 2vh;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    margin-bottom: 1vh;
+}
+
+.one-offer a:hover {
+    border: none;
+    transition: 0.3s;
+    background-color: transparent;
+}
+
+.one-offer h1 {
+    font-size: 2.5rem;
+    color: #020266;
+}
+
+.one-offer p {
+    text-align: start;
+    font-size: 1rem;
+    border-left: 8px solid #f9eaae;
+    margin-top: 3vh;
+    padding-left: 1vh; /* Adds padding for better readability */
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .offer {
+        flex-direction: column; /* Stacks items vertically */
+        height: auto; /* Allows the height to adjust */
+    }
+
+    .two-offer {
+        width: 100%;
+        height: 50vh; /* Adjusts image height for smaller screens */
+    }
+
+    .one-offer {
+        width: 100%;
+        margin-top: 5vh; /* Reduces margin for better layout */
+        height: auto;
+    }
+
+    .one-offer h1 {
+        font-size: 2rem; /* Scales down the font size */
+    }
+
+    .one-offer p {
+        font-size: 0.9rem; /* Adjust text size */
+    }
+
+    .one-offer a {
+        font-size: 0.9rem; /* Smaller buttons */
+        padding: 1vh 1.5vh;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .offer {
+        gap: 1vh; /* Reduce spacing for very small screens */
+    }
+
+    .two-offer {
+        height: 40vh; /* Adjust image height further */
+    }
+
+    .one-offer h1 {
+        font-size: 1.8rem; /* Smaller font for headlines */
+    }
+
+    .one-offer p {
+        font-size: 0.8rem;
+    }
+
+    .one-offer a {
+        font-size: 0.8rem;
+        padding: 0.8vh 1.2vh;
+    }
 }
