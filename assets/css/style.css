@@ -243,7 +243,7 @@ body{
     .name {
         padding-left: 1vh;
         padding-top: 2vh;
-
+height: 40vh;
 
     }
 
@@ -339,35 +339,6 @@ body{
 }
 
 /* enroll */
-.enroll{
-    display: flex;
-    justify-content: space-evenly;
-    height: 20vh;
-    align-items: center;
-}
-
-.enroll a{
-    text-decoration: none;
-}
-
-.out h2 a{
-    color: #c2bca4;
-    background-color: #020266;
-    padding: 10vh 20vh;
-}
-.in h2 a{
-    color: #020266;
-    background-color: #f4ebc6;
-    padding: 10vh 20vh;
-}
-.in h2 a:hover{
-    background-color: #ffffff;
-    transition: 0.3s;
-}
-.out h2 a:hover{
-    background-color: #ffffff;
-    transition: 0.3s;
-}
 
 /* enroll */
 .enroll {
@@ -386,7 +357,7 @@ body{
 .out h2 a {
     color: #c2bca4;
     background-color: #020266;
-    padding: 10vh 20vh;
+    padding: 6vh 40vh;
     display: inline-block; /* Ensure padding works correctly */
     text-align: center;
 }
@@ -395,7 +366,7 @@ body{
 .in h2 a {
     color: #020266;
     background-color: #f4ebc6;
-    padding: 10vh 20vh;
+    padding: 10vh 40vh;
     display: inline-block; /* Ensure padding works correctly */
     text-align: center;
 }
@@ -437,4 +408,15 @@ body{
         margin-top: 1vh;
         box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
     }
+}
+
+/* pic */
+.pic{
+    height: 140vh;
+
+}
+.pic img{
+object-fit: cover;
+height: 100%;
+width: 100%;
 }
