@@ -218,3 +218,107 @@ color: #392714;
     color: rgb(39, 39, 39);
     font-size: 3rem;
 }
+.down:hover{
+    background-color: #cdcdcd;
+    transition: 0.4s ease;
+}
+
+/* respnsive for mobile */
+/* Your original styles remain untouched */
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .left {
+        width: 20%; /* Adjust logo width */
+        margin: 0;
+        text-align: center;
+    }
+    .left img {
+        height: 6vh; /* Smaller logo size */
+    }
+
+    .right {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+    .right a {
+        padding: 1.5rem 2rem; /* Adjust padding */
+        font-size: 0.9rem;
+        margin: 0.5rem 0;
+    }
+
+    .second h1 {
+        font-size: 2rem; /* Smaller heading for mobile */
+        text-align: center;
+    }
+    .second h4 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .third {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .enrol {
+        flex-direction: column;
+        text-align: center;
+    }
+    .in, .out {
+        width: 80%;
+        margin: 1rem auto;
+    }
+
+    .body {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content {
+        width: 100%;
+        padding: 1rem;
+    }
+    .pic {
+        width: 100%;
+    }
+
+    .commit {
+        padding-left: 2rem;
+    }
+
+    .down a {
+        font-size: 2rem; /* Adjust font size */
+    }
+}
+
+/* Even smaller devices (below 576px) */
+@media (max-width: 576px) {
+    .navbar {
+        padding: 0.5rem;
+    }
+
+    .right a {
+        font-size: 0.8rem;
+        padding: 1rem;
+    }
+
+    .second h1 {
+        font-size: 1.5rem;
+    }
+
+    .in, .out {
+        font-size: 1.5rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+}
