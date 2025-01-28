@@ -6,6 +6,8 @@
 }
 body{
     height: 100%;
+    scroll-behavior: smooth;
+    scroll-behavior: auto;
     width: 100%;
 }
 
@@ -347,10 +349,12 @@ height: 40vh;
     align-items: center;
     height: 20vh;
     flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .enroll a {
     text-decoration: none;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Styles for .out */
@@ -359,6 +363,7 @@ height: 40vh;
     background-color: #020266;
     padding: 6vh 40vh;
     display: inline-block; /* Ensure padding works correctly */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
@@ -366,8 +371,9 @@ height: 40vh;
 .in h2 a {
     color: #020266;
     background-color: #f4ebc6;
-    padding: 10vh 40vh;
+    padding: 6vh 40vh;
     display: inline-block; /* Ensure padding works correctly */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
@@ -751,13 +757,14 @@ margin-top: 3vh;
 
  .z{
     color: #020266;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
  }
 
  .d a:hover{
     border: 1px solid #020266;
     background-color: #020266;
     transition: 0.5s;
-    padding: 2vh 74vh;
+    padding: 2vh 7vh;
     color: #f4ebc6;
  }
 
@@ -820,5 +827,108 @@ margin-top: 3vh;
     .d a {
         font-size: 1rem;
         padding: 1vh 2vh;
+    }
+}
+/* move */
+/* page tewo */
+.page2{
+    min-height: 100vh;
+    width: 100%;
+    padding: 8vw 0;
+    position: relative;
+}
+
+  
+
+
+.moving-text h1{
+    font-size: 9vw;
+    display: inline-block;
+
+}
+
+.gola{
+    text-align: center;
+    height: 5vh;
+    width:2.5vw ;
+    
+    background-color: #020266;
+    display: inline-block;
+    margin: 1vw 2vw;
+}
+
+.con{
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: move;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+
+}
+
+.moving-text{
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.moving-text::-webkit-scrollbar{
+    display: none;
+}
+.moving-text::-webkit-scrollbar{
+    display: none;
+}
+@keyframes move{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+.moving-text {
+    white-space: nowrap;
+    overflow: hidden; /* Hides the scrollbar */
+}
+
+.moving-text::-webkit-scrollbar {
+    display: none; /* For Webkit-based browsers (Chrome, Safari) */
+}
+
+.moving-text {
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+    scrollbar-width: none; /* For Firefox */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .moving-text h1 {
+        font-size: 12vw; /* Adjust text size for tablets */
+    }
+
+    .gola {
+        height: 4vh; /* Reduce size for smaller screens */
+        width: 5vw;
+    }
+
+    .page2 {
+        padding: 6vw 0; /* Reduce padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .moving-text h1 {
+        font-size: 14vw; /* Adjust text size for mobile screens */
+    }
+
+    .gola {
+        height: 3.5vh; /* Smaller size for mobile */
+        width: 6vw;
+    }
+
+    .page2 {
+        padding: 4vw 0; /* Smaller padding for mobile */
     }
 }
