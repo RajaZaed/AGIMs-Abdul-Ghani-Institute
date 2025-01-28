@@ -1,253 +1,82 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-html, body {
-    height: 100%;
-    width: 100%;
-}
-
-/* font */
-body {
-    font-family: "Smooch Sans", serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-}
-
-/* navbar */
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 12vh;
-}
-
-.logo-and-name {
-    display: flex;
-    align-items: center;
-}
-
-.logo {
-    height: 6vh;
-    margin-right: 1rem;
-}
-
-.college-name {
-    font-size: 1.8rem;
-    font-weight: bold;
-}
-
-.right {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 0 1.5vh;
-}
-
-.right a {
-    color: rgb(47, 35, 35);
-    text-decoration: none;
-    border: 1px solid rgb(238, 235, 235);
-    padding: 3vh 11vh;
-    width: 100%;
-}
-
-.right a:hover {
-    color: rgb(0, 0, 0);
-    background-color: #eeeeee;
-    transition: 1s ease-out;
-}
-
-.last a {
-    background-color: #ffa949;
-}
-
-/* toggle button */
-.toggle-btn {
-    font-size: 2rem;
-    background: none;
-    border: none;
-    color: #000;
-    cursor: pointer;
-    display: none; /* Hide by default */
-}
-
-.right.active {
-    display: block;
-}
-
-/* second section */
-.second {
-    height: 50vh;
-    margin: auto;
-    width: 100%;
-    margin-top: 15vh;
-}
-
-.second h1 {
-    font-size: 3rem;
-    margin: auto;
-}
-
-.second h4 {
-    font-size: 1.5rem;
-    margin-top: 1vh;
-    color: grey;
-}
-
-/* third section */
-.third {
-    height: 20vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.third h2 {
-    border-left: 2px solid #ffa949;
-    margin-left: 1vh;
-    padding-left: 2vh;
-}
-
-.third p {
-    color: grey;
-}
-
-/* enrol section */
-.enrol {
-    height: 20vh;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.enrol a {
-    text-decoration: none;
-    color: #392714;
-}
-
-.in {
-    background-color: #ffa949;
-    width: 50%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 1.8rem;
-}
-
-.out {
-    background-color: #cdcdcd;
-    width: 50%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 1.8rem;
-}
-
-.in:hover {
-    background-color: transparent;
-    transition: 0.5s ease-out;
-}
-
-.out:hover {
-    background-color: #af6006;
-    transition: 0.5s ease-out;
-}
-
-/* commit section */
-.commit {
-    height: 16vh;
-    border-left: 12px solid #ffa949;
-}
-
-.commit p {
-    font-size: 1.2rem;
-    padding-top: 1vh;
-    padding-left: 8vh;
-}
-
-.commit h3 {
-    margin-top: 4vh;
-    padding-left: 18vh;
-}
-
-/* body section */
-.body {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100vh;
-}
-
-.pic {
-    width: 65%;
-    height: 100%;
-}
-
-.pic img {
-    width: 100%;
-}
-
-.btn {
-    border: none;
-    background-color: transparent;
-    padding: 2vh;
-    border: #cdcdcd solid 1px;
-    background-color: #cdcdcd;
-    margin: 5vh;
-    color: #392714;
-}
-
-.btn:hover {
-    background-color: transparent;
-    color: #000;
-    transition: 0.5s ease-out;
-}
-
-/* mobile responsiveness */
-@media only screen and (max-width: 768px) {
-    .navbar {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-
-    .toggle-btn {
-        display: block;
-    }
-
-    .right {
-        display: none;
-        width: 100%;
-        margin: 0;
-        flex-direction: column;
-    }
-
-    .right.active {
-        display: flex;
-    }
-
-    .second {
-        height: auto;
-        text-align: center;
-    }
-
-    .third {
-        flex-direction: column;
-    }
-
-    .body {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .pic {
-        display: none;
-    }
-}
+        /* Navbar styles */
+        .navbar {
+            background-color: #333; /* Dark color for the navbar */
+            color: white;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 9999;
+            transition: all 0.3s ease;
+          }
+      
+          .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+          }
+      
+          .navbar .toggle-btn {
+            display: none;
+            background-color: transparent;
+            border: none;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+          }
+      
+          .navbar-links {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+          }
+      
+          .navbar-links a {
+            padding: 10px 15px;
+          }
+      
+          /* Mobile view styles */
+          @media (max-width: 768px) {
+            .navbar-links {
+              display: none;
+              width: 100%;
+              flex-direction: column;
+              position: absolute;
+              top: 60px; /* Just below the navbar */
+              left: 0;
+              background-color: #333;
+              padding: 20px 0;
+              height: 100vh; /* Full height of the screen */
+              justify-content: center;
+              transition: all 0.3s ease-in-out;
+            }
+      
+            .navbar-links.active {
+              display: flex;
+            }
+      
+            .navbar-links a {
+              text-align: center;
+              margin: 15px 0;
+            }
+      
+            .navbar .toggle-btn {
+              display: block;
+            }
+          }
+          
+          /* Light grey color for content behind the navbar */
+          .content {
+            margin-top: 60px;
+            padding: 20px;
+            background-color: lightgrey;
+            min-height: 100vh;
+            transition: margin-top 0.3s ease;
+          }
+      
+          .navbar-links.active + .content {
+            margin-top: 250px; /* Adjust to navbar height */
+          }
