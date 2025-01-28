@@ -322,3 +322,44 @@ color: #392714;
         font-size: 1rem;
     }
 }
+
+
+/* toogle */
+/* Default (Desktop) */
+.toggle-btn {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #392714;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .right {
+        display: none; /* Hide navbar links by default */
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        background-color: #ffffff; /* Optional background */
+        position: absolute;
+        top: 12vh; /* Below the navbar height */
+        left: 0;
+        z-index: 1000;
+    }
+
+    .right a {
+        padding: 1rem;
+        font-size: 1rem;
+        border-bottom: 1px solid #cdcdcd;
+    }
+
+    .toggle-btn {
+        display: block; /* Show toggle button */
+    }
+
+    .right.active {
+        display: flex; /* Show links when active */
+    }
+}

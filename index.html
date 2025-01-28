@@ -13,9 +13,9 @@
 <body>
     <!-- navbar by z -->
      <div class="navbar">
-        <!-- <div class="left">
-            <img src="asset/images/313049719_518104643659657_5444864482779626242_n.jpg" alt="agims logo">
-        </div> -->
+        <button class="toggle-btn" aria-label="Toggle Navigation">
+            &#9776; <!-- Hamburger Icon -->
+        </button>
         <div class="right">
         <h2><a href="#">Contact</a></h2>
         <h2><a href="#">About</a></h2>
@@ -88,6 +88,12 @@
                 <img src="assets/images/picture.avif" alt="">
             </div>
           </div>
-
+<script>const toggleBtn = document.querySelector('.toggle-btn');
+    const navbarRight = document.querySelector('.right');
+    
+    toggleBtn.addEventListener('click', () => {
+        navbarRight.classList.toggle('active');
+    });
+    </script>
 </body>
 </html>
