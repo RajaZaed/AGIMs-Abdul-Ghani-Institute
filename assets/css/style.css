@@ -1,82 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
 
-        /* Navbar styles */
-        .navbar {
-            background-color: #333; /* Dark color for the navbar */
-            color: white;
-            padding: 10px 20px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 9999;
-            transition: all 0.3s ease;
-          }
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+body{
+  font-family: "Smooch Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+
+
+/* Navbar Styles */
+.logo {
+    display: flex; /* Use Flexbox */
+    align-items: center; /* Vertically center the items */
+    gap: 10px; /* Add some spacing between the image and the text */
+
+    font-weight: bold;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-left: 2px solid black;
+    margin-right: 2vh;
+ 
+  }
+  
+  .logo img {
+    
+    max-width: 50px; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    
+  }
+  
+  .logo h3 {
+    font-size: 1.2rem; /* Adjust text size for responsiveness */
+    margin: 0;
+    
+    
+    
+  }
+  
+  
+  .navbar {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      /* background-color: #fdf7f3; 
+      border: 1px solid #a5a5a5;
+      border-radius: 10px;
+      padding: 10px 20px; */
+
+      display: flex;
+      justify-content: center;
+      background-color: #f8f5e9; 
+       /* Light beige background */
+      padding: 10px;
       
-          .navbar a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 18px;
-          }
+  }
+  
+  .navbar .logo h3 {
+      color: #ffffff;
+      margin: 0;
+      font-size: 1.5rem;
+  }
+  
+  .navbar .menu ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
       
-          .navbar .toggle-btn {
-            display: none;
-            background-color: transparent;
-            border: none;
-            color: white;
-            font-size: 30px;
-            cursor: pointer;
-          }
+  }
+  
+  .navbar .menu ul li {
+      margin-right: 20px;
+
+      padding: 12px 20px;
       
-          .navbar-links {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-          }
+      background-color: #fdfbf5;
+      /* box-shadow: h-offset v-offset blur spread color; */
+      box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+
+
+      /* background-color: #fc9a51; */
+  }
+  
+  .navbar .menu ul li a {
+      color: #020266;
+      text-decoration: none;
+      font-size: 1rem;
       
-          .navbar-links a {
-            padding: 10px 15px;
-          }
-      
-          /* Mobile view styles */
-          @media (max-width: 768px) {
-            .navbar-links {
-              display: none;
-              width: 100%;
-              flex-direction: column;
-              position: absolute;
-              top: 60px; /* Just below the navbar */
-              left: 0;
-              background-color: #333;
-              padding: 20px 0;
-              height: 100vh; /* Full height of the screen */
-              justify-content: center;
-              transition: all 0.3s ease-in-out;
-            }
-      
-            .navbar-links.active {
-              display: flex;
-            }
-      
-            .navbar-links a {
-              text-align: center;
-              margin: 15px 0;
-            }
-      
-            .navbar .toggle-btn {
-              display: block;
-            }
-          }
+      padding: 0vh 5vh;
+  }
+  
+  .navbar .hamburger {
+      display: none; /* Hidden by default */
+      cursor: pointer;
+      flex-direction: column;
+      gap: 5px;
+  }
+  
+  .navbar .hamburger .bar {
+      width: 30px;
+      height: 4px;
+      background-color: #ffffff;
+      border-radius: 2px;
+  }
+  
+  /* Mobile View */
+  @media (max-width: 768px) {
+      .navbar .menu {
+          display: none; /* Hide the menu by default */
+          position: absolute;
+          top: 60px;
+          left: 0;
+          right: 0;
+          background-color: #fdf7f3;
+          text-align: center;
+          line-height: 3.5rem;
+          color: #5c3100;
           
-          /* Light grey color for content behind the navbar */
-          .content {
-            margin-top: 60px;
-            padding: 20px;
-            background-color: lightgrey;
-            min-height: 100vh;
-            transition: margin-top 0.3s ease;
-          }
-      
-          .navbar-links.active + .content {
-            margin-top: 250px; /* Adjust to navbar height */
-          }
+      }
+  
+      .navbar .menu ul {
+          flex-direction: column;
+          margin-top: 10px;
+      }
+  
+      .navbar .menu ul li {
+          margin-bottom: 10px;
+          margin-left: 13px;
+          
+      }
+  
+      .navbar .hamburger {
+          display: flex; /* Show hamburger icon */
+      }
+  
+      .navbar .menu.active {
+          display: block; /* Show menu when active */
+      }
+  }
+  
+  
+
+
+
+.navbar ul li a:hover {
+    color: #c2bca4;
+    
+}
+/* ========================================================================================== */
+.name{
+    height: 80vh;
+    background-color: #fffefa;
+    padding-top: 10vh;
+    padding-left: 10vh;
+}
+.name h1{
+    font-size: 4.5rem;
+    color: #020266;
+    line-height: 9vh;
+    
+}
+.name h2{
+    border-left: #f4ebc6 8px solid;
+    padding-left: 1.5vh;
+}
+.name {
+    height: 80vh;
+    background-color: #fffefa;
+    padding-top: 10vh;
+    padding-left: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.name h1 {
+    font-size: 6.5rem;
+    color: #020266;
+    line-height: 14vh;
+    text-align: center;
+}
+
+.name h2 {
+    border-left: #f4ebc6 8px solid;
+    padding-left: 1.5vh;
+    margin-top: 1.5vh;
+}
+
+@media (max-width: 1200px) {
+    .name {
+        padding-left: 5vh;
+        padding-top: 5vh;
+    }
+
+    .name h1 {
+        font-size: 6.5rem;
+        
+        line-height: 14vh;
+    }
+
+    .name h2 {
+        padding-left: 1vh;
+        font-size: 1vh;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .name {
+        padding-left: 2vh;
+        padding-top: 3vh;
+        
+        
+    }
+
+    .name h1 {
+        font-size: 6.5rem;
+        
+        line-height: 14vh;
+    }
+
+    .name h2 {
+        padding-left: 0.5vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .name {
+        padding-left: 1vh;
+        padding-top: 2vh;
+
+
+    }
+
+    .name h1 {
+        font-size: 2.5rem;
+        line-height: 8vh;
+    }
+
+    .name h2 {
+        padding-left: 0.3vh;
+    }
+}
