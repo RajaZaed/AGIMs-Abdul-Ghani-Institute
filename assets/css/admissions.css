@@ -340,3 +340,69 @@ padding: 0 4vh;
         font-size: 0.9rem;
     }
 }
+
+
+/* fields */
+.program-section {
+    padding: 20px;
+}
+
+.program {
+    margin-bottom: 20px;
+}
+
+.field-details {
+    display: none;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+}
+
+.field-details img {
+    width: 100%;
+    height: 200px; /* Set a fixed height for landscape images */
+    object-fit: cover;
+}
+
+.arrow {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.arrow:hover {
+    color: #c2bca4;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+h2{
+    color: #020266;
+}
+
+.apply-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.apply-button:hover {
+    background-color: #0056b3;
+}
+
+button:focus {
+    outline: none;
+}
+
+.apply-button a{
+    text-decoration: none;
+    color: white;
+}
