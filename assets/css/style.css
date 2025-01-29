@@ -963,6 +963,35 @@ margin-top: 3vh;
     margin-top: 2vw; /* Space above the text */
 }
 
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+    .owner-image {
+        width: 40vw; /* Increase size slightly on smaller screens */
+        height: 40vw;
+        max-width: 150px; /* Adjust maximum size for tablets */
+        max-height: 150px;
+    }
+
+    .owner h2 {
+        font-size: 5vw; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .owner-image {
+        width: 150px; /* Larger size for small screens (mobile) */
+        height: 150px;
+        max-width: 120px; /* Adjust maximum size for phones */
+        max-height: 120px;
+        display: block;
+        margin: 0 auto;
+        object-fit: cover;
+    }
+
+    .owner h2 {
+        font-size: 6vw; /* Further adjust font size for small screens */
+    }
+}
 /* Departments Section Styles */
 .departments {
     background-color: #f4ebc6;  /* Sky blue background for the section */
