@@ -217,7 +217,7 @@ font-style: normal;
   }
   
   #admission-form button {
-    background: skyblue;
+    background: #c2bca4;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -226,7 +226,7 @@ font-style: normal;
   }
   
   #admission-form button:hover {
-    background: #005f74;
+    background: #020266;
   }
   
   .instructions {
