@@ -163,3 +163,89 @@ body{
     
 }
 /* ========================================================================================== */
+
+/* Campus Section */
+#campus {
+    background-color: #f8f5e9;
+    color: #00047d;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Campus Grid */
+.campus-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.campus-box {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 4, 125, 0.3);
+    overflow: hidden;
+    width: 48%;
+    text-align: left;
+}
+
+.campus-box img {
+    width: 100%;
+    margin-top: 2vh;
+    height: 60px;
+    object-fit: cover;
+}
+.campus-box img{
+    width: 100%;
+    margin-top: 2vh;
+    height: 60px;
+    object-fit: cover
+}
+
+.campus-info {
+    padding: 20px;
+}
+
+.campus-info h3 {
+    color: #4d71f4;
+    font-size: 22px;
+}
+
+.campus-info p {
+    margin: 5px 0;
+}
+
+.campus-info a {
+    color: #4d71f4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.map {
+    margin-top: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 4, 125, 0.3);
+}
+
+.map iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .campus-grid {
+        flex-direction: column;
+    }
+
+    .campus-box {
+        width: 100%;
+    }
+}
